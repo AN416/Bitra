@@ -5,7 +5,6 @@ lucide.createIcons();
 
 // Header scroll effect
 const header = document.getElementById('mainHeader');
-const themeColorMeta = document.querySelector('meta[name="theme-color"]');
 
 window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
@@ -20,10 +19,8 @@ window.addEventListener('load', () => {
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         header.classList.add('header-scrolled');
-        if (themeColorMeta) themeColorMeta.setAttribute('content', 'rgba(22, 44, 78, 0.95)'); // Matches scrolled header precisely
     } else {
         header.classList.remove('header-scrolled');
-        if (themeColorMeta) themeColorMeta.setAttribute('content', 'transparent'); // iPhone transparent header over Hero section
     }
 });
 
