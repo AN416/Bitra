@@ -1,0 +1,72 @@
+/* Custom Styles & Overrides */
+html {
+    scroll-behavior: smooth;
+}
+
+[dir="rtl"] {
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+    text-align: right;
+}
+
+[dir="ltr"] {
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+}
+
+/* Header transition states */
+#mainHeader {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-scrolled {
+    background-color: rgba(22, 44, 78, 0.95) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    color: #FFFFFF !important;
+    /* White text on Navy */
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.header-scrolled [data-lucide] {
+    color: #FFFFFF !important;
+}
+
+.header-scrolled .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    /* white/90 */
+}
+
+/* Base transitions */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* RTL Icon Rotation support */
+[dir="rtl"] .rtl\:rotate-180 {
+    transform: rotate(180deg);
+}
+
+[dir="ltr"] .rtl\:rotate-180 {
+    transform: rotate(0deg);
+}
+
+/* Hide scrollbar for the carousel track but allow JS sliding */
+#testimonialTrack {
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    display: flex;
+}
+
+.testimonial-slide {
+    flex: 0 0 100%;
+    min-width: 100%;
+    padding: 0 1rem;
+}
+
+/* Preloader fade out */
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease-out, visibility 0.8s ease-out;
+}
