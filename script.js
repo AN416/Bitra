@@ -120,7 +120,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 const content = {
     EN: {
-        name:"Bitra",
+        name: "Bitra",
         navHome: "Home",
         navFeatures: "Features",
         navPricing: "Pricing",
@@ -243,7 +243,7 @@ const content = {
         fSlogan: "PRECISE VALUATION. EVERYWHERE."
     },
     AR: {
-        name:"بيترا",
+        name: "بيترا",
         navHome: "الرئيسية",
         navFeatures: "الميزات",
         navPricing: "الأسعار",
