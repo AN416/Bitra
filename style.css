@@ -38,9 +38,17 @@ html {
     /* white/90 */
 }
 
-/* Base transitions */
+/* Base transitions and iOS Safari Safeties */
 body {
     transition: background-color 0.3s ease, color 0.3s ease;
+    padding-top: env(safe-area-inset-top);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+}
+
+/* Ensure footer accounts for iOS Home Bar indicator */
+footer {
+    padding-bottom: calc(2.5rem + env(safe-area-inset-bottom)) !important;
 }
 
 /* RTL Icon Rotation support */
