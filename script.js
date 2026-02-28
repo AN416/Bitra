@@ -23,7 +23,7 @@ window.addEventListener('scroll', () => {
         if (themeColorMeta) themeColorMeta.setAttribute('content', 'rgba(22, 44, 78, 0.95)'); // Matches scrolled header precisely
     } else {
         header.classList.remove('header-scrolled');
-        if (themeColorMeta) themeColorMeta.setAttribute('content', '#162C4E'); // Matches solid navy behind the hero video
+        if (themeColorMeta) themeColorMeta.setAttribute('content', 'transparent'); // iPhone transparent header over Hero section
     }
 });
 
